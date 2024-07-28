@@ -1,9 +1,16 @@
+import Header from './componets/Header'
+import { Outlet } from 'react-router-dom'
+import { Container } from 'react-bootstrap'
 import React from 'react'
 
 const App = () => {
   return (
     <>
-    <h1>MERN-Auth</h1>
+    <Header/>
+    <Container className='my-2'>
+    <Outlet/>
+    </Container>
+ 
     </>
   )
 }
